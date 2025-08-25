@@ -35,14 +35,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/Dark-mode.png)  // dark mode
-![](./screenshot/Light-mode.png) // light mode
+![](./screenshot/Dark-mode.png) 
+![](./screenshot/Light-mode.png) 
 
-(Add your screenshot here when available.)
 
 ### Links
 
-* Solution URL: [Add solution URL here]()
+* Solution URL: [https://github.com/DevAbdul-web/browser-extension-.git]()
 * Live Site URL: [Add live site URL here]()
 
 ---
@@ -109,8 +108,7 @@ In future projects, I want to:
 
 ## Author
 
-* Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-* Twitter - [@yourusername](https://www.twitter.com/yourusername)
+* Frontend Mentor - [@DevAbdul-web](https://www.frontendmentor.io/profile/DevAbdul-web)
 
 ---
 
