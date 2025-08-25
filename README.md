@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 * Solution URL: [https://github.com/DevAbdul-web/browser-extension-.git]()
-* Live Site URL: [Add live site URL here]()
+* Live Site URL: [https://devabdul-web.github.io/browser-extension-/]()
 
 ---
 
