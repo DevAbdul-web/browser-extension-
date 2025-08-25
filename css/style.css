@@ -1,0 +1,375 @@
+/* ==============================
+   Base Styles & Dark Gradient
+   ============================== */
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    font-family: 'Noto Sans', sans-serif;
+    color: hsl(200, 60%, 99%);
+}
+
+h1, h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    margin: 0 0 3%;
+    color: hsl(0, 0%, 93%);
+}
+
+h1 { font-size: 30px; }
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 3%;
+    color: hsl(0, 0%, 60%);
+}
+
+/* ==============================
+   Buttons - Dark Mode
+   ============================== */
+.button-dark {
+    background: none;
+    border: hsl(0, 0%, 78%) thin solid;
+    color: hsl(0, 0%, 78%);
+    padding: 7px 15px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 0;
+}
+
+.button-dark:focus::before,
+.button-dark:focus::after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.button-dark:focus::before {
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    border: hsl(3, 71%, 56%) 2px solid;
+}
+
+.button-dark::after {
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+    border: hsl(227, 75%, 14%) 2px solid;
+}
+
+.btn {
+    background-color: hsl(225, 23%, 24%);
+}
+
+/* ==============================
+   Header & Icons
+   ============================== */
+header ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1%;
+    margin: 0;
+    align-items: center;
+    list-style: none;
+}
+
+header div {
+    background-color: hsl(226, 25%, 17%);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.icon button {
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.icon button:focus::before,
+.icon button:focus::after { border-radius: 10px; }
+
+.icon button:focus::before { border-radius: 12px; }
+.icon button:focus::after { border-radius: 11px; }
+
+.icon-btn:hover {
+    background-color: hsl(226, 11%, 37%);
+    color: hsl(0, 0%, 78%);
+}
+
+/* ==============================
+   Focused Buttons
+   ============================== */
+.focus {
+    border-radius: 20px;
+}
+
+.focus:hover {
+    background-color: hsl(3, 71%, 56%);
+    color: hsl(227, 75%, 14%);
+    border: none;
+}
+
+.focus:focus::before,
+.focus:focus::after { border-radius: 20px; }
+
+.focus:focus::before { border-radius: 22px; }
+.focus:focus::after { border-radius: 21px; }
+
+/* ==============================
+   Layout Containers
+   ============================== */
+.container {
+    margin: 1% 3%;
+    padding: 1% 3%;
+}
+
+.extension-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 0 1%;
+    margin-top: 3% 0 2%;
+}
+
+.extension-list-filter {
+    margin: 3% 0;
+    justify-content: right;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+/* ==============================
+   Filter Buttons 
+   ============================== */
+.filter {
+    border-radius: 22px;
+    padding: 5% 13%;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid hsl(226, 25%, 17%); 
+    color: hsl(0, 0%, 78%);
+    cursor: pointer;
+}
+
+.filter:hover {
+    background-color: hsl(226, 11%, 37%);
+    color: hsl(0, 0%, 78%);
+}
+
+/* ==============================
+   Grid & Extensions
+   ============================== */
+.gridlayout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 2fr;
+    gap: 10px;
+}
+
+.extension {
+    padding: 5%;
+    background-color: hsl(226, 25%, 17%);
+    border-radius: 15px;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.extension-items {
+    display: flex;
+    align-items: flex-start;
+    gap: 5%;
+    padding: 3% 0;
+    height: 147px;
+}
+
+.extension-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    padding: 3px 12px;
+    border: none !important;
+    background-color: hsl(226, 11%, 37%);
+}
+
+.button:hover {
+    background-color: hsl(226, 11%, 37%);
+}
+
+.hidden-item {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+/* ==============================
+   Status Indicators
+   ============================== */
+.inactive {
+    background-color: hsl(0, 0%, 78%);
+    padding: 6px 7px;
+    border-radius: 100%;
+    position: relative;
+    right: 5px;
+}
+
+.button-active {
+    background-color: hsl(3, 71%, 56%);
+}
+
+.button-active:hover {
+    background-color: hsl(3, 71%, 56%);
+    color: hsl(227, 75%, 14%);
+}
+
+.active {
+    background-color: hsl(0, 0%, 78%);
+    padding: 6px 7px;
+    border-radius: 100%;
+    position: relative;
+    left: 5px;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+    background: linear-gradient(30deg, hsl(224, 71%, 8%), hsl(225, 90%, 12%));
+    padding: 20px;
+}
+
+.restore-all {
+    margin: 2%;
+    border: hsl(226, 11%, 37%) thin solid;
+}
+
+.attribution {
+    text-align: center;
+}
+
+.attribution p {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.attribution h6 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.attribution a {
+    color: hsl(228, 55%, 56%);
+}
+
+/* ==============================
+   Light Gradient & Light Mode
+   ============================== */
+body.body-light {
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
+
+.p-light {
+    color: hsl(225, 23%, 24%);
+}
+
+.light {
+    color: hsl(227, 75%, 14%);
+}
+
+.button-light {
+    border: 1px solid hsl(200, 60%, 99%); 
+    color: hsl(226, 11%, 37%);
+}
+
+.div,
+.ext {
+    background-color: hsl(200, 60%, 99%);
+}
+
+.removeBtnBorder {
+    border: hsl(0, 0%, 78%) thin solid;
+}
+
+.button-light:hover {
+    color: hsl(200, 60%, 99%);
+}
+
+.btn-light {
+    background-color: hsl(200, 60%, 99%);
+    color: hsl(226, 11%, 37%);
+}
+
+.btn-light:hover {
+    background-color: hsl(0, 0%, 90%);
+    border: none;
+}
+
+.moon-light {
+    background-color: hsl(217, 61%, 90%);
+}
+
+.button-light::after {
+    border: hsl(200, 60%, 99%) 1px solid;
+}
+
+.body-light .button-active {
+    background-color: hsl(3, 77%, 44%) !important;
+    color: hsl(200, 60%, 99%);
+}
+
+.body-light .button-active:hover {
+    background-color: hsl(3, 71%, 56%) !important;
+}
+
+.body-light .select-buttons-bg {
+    background-color: hsl(0, 0%, 78%);
+}
+
+.body-light .select-buttons-bg:hover {
+    background-color: hsl(0, 0%, 78%);
+}
+
+.body-light footer.foot {
+    background: linear-gradient(180deg, #d7e4f7 0%, #c1e4e7 100%);
+}
+
+/* ==============================
+   Responsive Layout
+   ============================== */
+@media (min-width: 1442px) {
+    .gridlayout {
+        grid-template-columns: repeat(4, 2fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .gridlayout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+    .gridlayout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .extension-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .extension-list-filter {
+        justify-content: center;
+    }
+}

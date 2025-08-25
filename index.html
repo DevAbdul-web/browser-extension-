@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============ Favicon ============ -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Browser Extensions Manager UI</title>
+
+  <!-- ============ Stylesheet ============ -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- ============ Google Fonts ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- ================= HEADER ================= -->
+    <header>
+      <div class="headDiv">
+        <ul>
+          <!-- Logo -->
+          <li class="logo">
+            <img class="logo-theme" src="./assets/images/logo2.svg" alt="App logo">
+          </li>
+
+          <!-- Theme toggle button -->
+          <li class="icon">
+            <button class="button-dark icon-btn btn">
+              <img class="theme-mode" src="./assets/images/icon-sun.svg" alt="light mode">
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ================= EXTENSION FILTER ================= -->
+    <section class="extension-section">
+      <div class="extension-list">
+        <div class="extension-list-title">
+          <h1>Extensions List</h1>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="extension-list-filter">
+          <button class="button-dark filter btn focus all-btn">All</button>
+          <button class="button-dark filter btn focus active-btn">Active</button>
+          <button class="button-dark filter btn focus inactive-btn">Inactive</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXTENSION CARDS ================= -->
+    <section>
+      <div class="gridlayout">
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-devlens.svg" alt="DevLens logo">
+            <div>
+              <h3>DevLens</h3>
+              <p>Quickly inspect page layouts and visualize element boundaries.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-style-spy.svg" alt="StyleSpy logo">
+            <div>
+              <h3>StyleSpy</h3>
+              <p>Instantly analyze and copy CSS from any webpage element.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-speed-boost.svg" alt="SpeedBoost logo">
+            <div>
+              <h3>SpeedBoost</h3>
+              <p>Optimizes browser resource usage to accelerate page loading.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-json-wizard.svg" alt="JSONWizard logo">
+            <div>
+              <h3>JSONWizard</h3>
+              <p>Formats, validates, and prettifies JSON responses in-browser.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-tab-master-pro.svg" alt="TabMaster Pro logo">
+            <div>
+              <h3>TabMaster Pro</h3>
+              <p>Organizes browser tabs into groups and sessions.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-viewport-buddy.svg" alt="ViewportBuddy logo">
+            <div>
+              <h3>ViewportBuddy</h3>
+              <p>Simulates various screen resolutions directly within the browser.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-markup-notes.svg" alt="Markup Notes logo">
+            <div>
+              <h3>Markup Notes</h3>
+              <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-grid-guides.svg" alt="GridGuides logo">
+            <div>
+              <h3>GridGuides</h3>
+              <p>Overlay customizable grids and alignment guides on any webpage.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-palette-picker.svg" alt="Palette Picker logo">
+            <div>
+              <h3>Palette Picker</h3>
+              <p>Instantly extracts color palettes from any webpage.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension">
+          <div class="extension-items">
+            <img src="./assets/images/logo-link-checker.svg" alt="LinkChecker logo">
+            <div>
+              <h3>LinkChecker</h3>
+              <p>Scans and highlights broken links on any page.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-dom-snapshot.svg" alt="DOM Snapshot logo">
+            <div>
+              <h3>DOM Snapshot</h3>
+              <p>Capture and export DOM structures quickly.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Extension Card -->
+        <div class="extension not-active">
+          <div class="extension-items">
+            <img src="./assets/images/logo-console-plus.svg" alt="ConsolePlus logo">
+            <div>
+              <h3>ConsolePlus</h3>
+              <p>Enhanced developer console with advanced filtering and logging.</p>
+            </div>
+          </div>
+          <div class="extension-button">
+            <button class="button-dark remove focus">Remove</button>
+            <button class="button-dark button focus">
+              <div class="sel-btn state-btn inactive"></div>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    
+    <div class="attribution">
+      <button class="restore-all button-dark focus">Recover removed extensions</button>
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.</p>
+      <h6>Coded by <a href="#">Abdulqodir</a>.</h6>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
